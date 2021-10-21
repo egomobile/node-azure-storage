@@ -1,6 +1,6 @@
 {
     "name": "@egomobile/azure-storage",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Classes and tools, that help connecting to Azure Storag(s).",
     "main": "lib/index.js",
     "engines": {
