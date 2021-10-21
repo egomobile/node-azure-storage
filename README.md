@@ -30,7 +30,7 @@ import {
 
 // get clients of 'my-connection'
 const blobClient = getBlobServiceClient("my-connection");
-const containerClient = getBlobServiceClient("my-connection");
+const containerClient = getContainerClient("my-connection");
 ```
 
 ## Documentation
