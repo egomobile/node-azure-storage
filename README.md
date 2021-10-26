@@ -24,7 +24,7 @@ import {
 
 // setup the following environment variables:
 //
-// - AZURE_STORAGE_CONNECTION_1_NAME=my-connection
+// - AZURE_STORAGE_CONNECTION_1=my-connection
 // - AZURE_STORAGE_CONNECTION_1_CONTAINER=my_container
 // - AZURE_STORAGE_CONNECTION_1_URL=<YOUR-CONNECTION-URL>
 
