@@ -79,7 +79,7 @@ export interface IContainerClientOptions extends IBlobStorageClientOptions {
  *
  * The variables must have the following structure:
  *
- * - AZURE_STORAGE_CONNECTION_{NR}_NAME => the name of the connection
+ * - AZURE_STORAGE_CONNECTION_{NR} => the name of the connection
  * - AZURE_STORAGE_CONNECTION_{NR}_URL => the connection URL
  *
  * @param {string} name The connection name.
@@ -104,8 +104,8 @@ export const defaultGetBlobStorageClientOptions: GetBlobStorageClientOptions = (
  *
  * The variables must have the following structure:
  *
+ * - AZURE_STORAGE_CONNECTION_{NR} => the name of the connection
  * - AZURE_STORAGE_CONNECTION_{NR}_CONTAINER => the default container name
- * - AZURE_STORAGE_CONNECTION_{NR}_NAME => the name of the connection
  * - AZURE_STORAGE_CONNECTION_{NR}_URL => the connection URL
  *
  * @param {string} name The connection name.
@@ -223,7 +223,7 @@ export function createGetContainerClientFactory(optionsOrFunc: GetContainerClien
  *
  * // setup the following environment variables:
  * //
- * // - AZURE_STORAGE_CONNECTION_1_NAME=my-connection
+ * // - AZURE_STORAGE_CONNECTION_1=my-connection
  * // - AZURE_STORAGE_CONNECTION_1_CONTAINER=my_container
  * // - AZURE_STORAGE_CONNECTION_1_URL=<YOUR-CONNECTION-URL>
  *
@@ -232,7 +232,7 @@ export function createGetContainerClientFactory(optionsOrFunc: GetContainerClien
  *
  * The variables must have the following structure:
  *
- * - AZURE_STORAGE_CONNECTION_{NR}_NAME => the name of the connection
+ * - AZURE_STORAGE_CONNECTION_{NR} => the name of the connection
  * - AZURE_STORAGE_CONNECTION_{NR}_URL => the connection URL
  */
 export const getBlobServiceClient = createGetBlobServiceClientFactory(defaultGetBlobStorageClientOptions);
@@ -247,7 +247,7 @@ export const getBlobServiceClient = createGetBlobServiceClientFactory(defaultGet
  *
  * // setup the following environment variables:
  * //
- * // - AZURE_STORAGE_CONNECTION_1_NAME=my-connection
+ * // - AZURE_STORAGE_CONNECTION_1=my-connection
  * // - AZURE_STORAGE_CONNECTION_1_CONTAINER=my_container
  * // - AZURE_STORAGE_CONNECTION_1_URL=<YOUR-CONNECTION-URL>
  *
@@ -256,8 +256,8 @@ export const getBlobServiceClient = createGetBlobServiceClientFactory(defaultGet
  *
  * The variables must have the following structure:
  *
+ * - AZURE_STORAGE_CONNECTION_{NR} => the name of the connection
  * - AZURE_STORAGE_CONNECTION_{NR}_CONTAINER => the default container name
- * - AZURE_STORAGE_CONNECTION_{NR}_NAME => the name of the connection
  * - AZURE_STORAGE_CONNECTION_{NR}_URL => the connection URL
  */
 export const getContainerClient = createGetContainerClientFactory(defaultGetContainerClientOptions);
