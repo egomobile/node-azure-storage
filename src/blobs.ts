@@ -205,8 +205,8 @@ export function createGetContainerClientFactory(optionsOrFunc: GetContainerClien
         throw new TypeError('optionsOrFunc must be a function or object');
     }
 
-    return (name, customerContainer?) => {
-        const { container, url } = getOptions(name, customerContainer);
+    return (name, customContainer?) => {
+        const { container, url } = getOptions(name, customContainer);
 
         return BlobServiceClient.fromConnectionString(url)
             .getContainerClient(container);

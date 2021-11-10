@@ -1,6 +1,6 @@
 # Change Log (@egomobile/azure-storage)
 
-## 0.2.0
+## 0.2.1
 
 - made versions in `package.json`
 - (bug-)fixes
